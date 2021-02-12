@@ -1,0 +1,130 @@
+:root {
+    --accent-bg: #ffffdd;
+    --border-color: #bfbfa6;
+    --food: rgba(238, 77, 24, 0.425);
+    --wood: rgba(139, 90, 43, 0.80);
+    --gold: rgba(205, 155, 29, 0.80);
+    --stone: #CDCDB4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 100vh;
+}
+
+.table-wrap {
+    position: relative;
+    margin-top: 50px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.food {
+    background: var(--food);
+}
+
+.wood {
+    background: var(--wood);
+}
+
+.gold {
+    background: var(--gold);
+}
+
+.stone {
+    background: var(--stone);
+}
+
+.hide-button {
+    background-color: var(--accent-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 180px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.table th {
+    border: 1px solid #000;
+    padding: 5px 15px;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px var(--border-color) solid;
+}
+
+.table td:first-child {
+    text-align: left;
+    padding: 5px 15px 5px 5px;
+}
+
+form {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.units {
+    position: relative;
+    margin-top: 50px;
+}
+
+.unit-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.unit-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.unit-card:hover {
+    background-color: var(--accent-bg);
+}
+
+.unit-card>img {
+    height: 22px;
+    width: 22px;
+}
+
+.result {
+    background: var(--accent-bg);
+}
