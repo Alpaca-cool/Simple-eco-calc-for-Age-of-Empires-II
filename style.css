@@ -3,8 +3,8 @@
     --border-color: #FFA800;
     --food: rgba(238, 77, 24, 0.425);
     --wood: rgba(139, 90, 43, 0.80);
-    --gold: #FFA800;
-    --stone: #CDCDB4;
+    --gold: rgba(255, 168, 0, 0.60);
+    --stone: rgba(205, 205, 180, 0.60);
     /* text gradient */
     --gradient-bottom: #F2A410;
     --gradient-top: #ddd8cd;
@@ -61,6 +61,7 @@ body {
 
 .table {
     border-collapse: collapse;
+    font-weight: 600;
 }
 
 .food {
@@ -92,6 +93,7 @@ body {
     border-top-left-radius: 15px;
     cursor: pointer;
     user-select: none;
+    font-weight: 600;
 }
 
 .table th {
@@ -170,10 +172,13 @@ input:focus {
 }
 
 .unit-card {
+    background: var(--button-gradient);
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100px;
     border: 1px solid var(--border-color);
     cursor: pointer;
