@@ -327,8 +327,16 @@ Array.from(document.querySelectorAll(".hide-button")).forEach(e => e.onclick = e
 
 Array.from(document.querySelectorAll(".unit-card")).forEach(e => e.onclick = e => {
     let unitName = e.target.id;
+    if (!unitName) {
+        unitName = e.target.parentNode.id;
 
-    console.log(unitsObject[unitName]);
+        if (!unitName) {
+            resDiv.innerHTML = "ERROR";
+            return -1;
+        }
+    }
+
+
 
     foodCostInput.value = unitsObject[unitName].food;
     woodCostInput.value = unitsObject[unitName].wood;
