@@ -310,10 +310,10 @@ function calcVills() {
     let villsFarm = inSecFood / resoursesObject.farm;
     let villsGold = inSecGold / resoursesObject.gold;
 
-    resDiv.innerHTML = `<p>Farmers: ${villsFarm.toFixed(2)}</p>`;
-    resDiv.innerHTML += `<p>Gold miners: ${villsGold.toFixed(2)}</p>`;
-    resDiv.innerHTML += `<p>Stone miners: ${villsStone.toFixed(2)}</p>`;
-    resDiv.innerHTML += `<p>Lumberjacks: ${villsWood.toFixed(2)}</p>`;
+    resDiv.innerHTML = `<p>Farmers: <span>${villsFarm.toFixed(2)}</span></p>`;
+    resDiv.innerHTML += `<p>Gold miners: <span>${villsGold.toFixed(2)}</span></p>`;
+    resDiv.innerHTML += `<p>Stone miners: <span>${villsStone.toFixed(2)}</span></p>`;
+    resDiv.innerHTML += `<p>Lumberjacks: <span>${villsWood.toFixed(2)}</span></p>`;
 }
 
 Array.from(document.querySelectorAll("input")).forEach(e => {
